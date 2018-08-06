@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ingresar nuevo </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="uni.css">
+    <!--Para sitio DRW diseño web responsivo ADAPTATIVO a cualquier navegador y dispositivo-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="estilos_base.css">
+<link rel="icon" href="images/1.png">
+     <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!-- Custom styles for this template -->    
+    <link href="css/navbar.css" rel="stylesheet">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="./demobar_files/jquery-latest.min.js"></script>
+<script type="text/javascript" src="./demobar_files/jquery.min.js"></script>
+<script type="text/javascript" src="./demobar_files/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="./demobar_files/bootstrap.css">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+    </head>
+    <style>
+          
+   /*Estilo Navbar*/
+
+    .navbar{
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #38E1CC;  /*Sets the text hover color on navbar*/
+    }
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+       a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      color: white; /*BACKGROUND color for active*/
+      background-color: #500;
+    }
+
+   .navbar-default {
+     background-color: #444;
+     border-color: #030033;
+    }
+
+   .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+       color: #262626;
+       text-decoration: none;
+      background-color: #111;  /*change color of links in drop down here*/
+     }
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        text-decoration: none;
+       background-color: white; /*Change rollover cell color here*/
+     }
+
+
+    .navbar-default  .navbar-nav > li > a {
+       color: white; /*Change active text color here*/
+     }
+     .navbar-default .navbar-brand {
+    color: white;
+      }
+
+    /*Termina Estilo Navbar*/    
+    </style>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation"> <!--NavBar-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" "dropdown yamm-fw" class="toplink" href="index.html" target="_self"> <img src="images/1.png" width="50" height="50"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown yamm-fw"><a class="toplink" href="index.html" target="_self">Inicio</a></li>
+         <li class="dropdown yamm-fw"><a class="toplink" href="kdms.html" target="_self">¿Qué es kadmus?</a></li>
+        <li class="dropdown yamm-fw"><a class="toplink" href="#" target="_self">Descargas</a></li>
+        <li class="dropdown yamm-fw"><a class="toplink" href="blogs.html" target="_self">Te ayudamos a ahorrar</a></li>
+      </ul>
+      
+    </div>
+  </div>
+ </nav>
+    <body style=" background-color:black;">
+        
+
+    
+       
+            
+                
+                <div class="limiter">
+    <div class="container-login100" style="background-image: url('images/dos.jpg');">
+      <div class="wrap-login100">
+       
+          <form name="registro" method="post" action="agregarTe.jsp">
+          <span class="login100-form-logo">
+            <img src="images/1.png" width="54.97" height="60">
+          </span>
+
+          <span class="login100-form-title p-b-34 p-t-27">
+            Registro de usuarios
+          </span>
+
+          <div class="wrap-input100 validate-input" data-validate = "Enter username">
+            <label>Digita en un numero en aleatorio:</label>
+            <input class="input100" type="text" name="numCuenta"  placeholder="Ej. 125">
+            <span  data-placeholder="&#xf207;">  </span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+            <label>Nombre </label>
+            <input class="input100" type="text" name="nombreUs" placeholder="Ej. Gerson">
+            <span  data-placeholder="&#xf191;"></span>
+          </div>
+
+             <div class="wrap-input100 validate-input" data-validate="Enter password">
+              <label>Apellido</label>
+            <input class="input100" type="text" name="apellidoPat"  placeholder="Ej. Santos">
+            <span  data-placeholder="&#xf191;"></span>
+          </div>
+             
+             <div class="wrap-input100 validate-input" data-validate="Enter password">
+              <label>Edad</label>
+            <input class="input100" type="text"  name="edad"  placeholder="Ej. 21">
+            <span  data-placeholder="&#xf191;"></span>
+          </div>
+
+        
+        <div class="wrap-input100 validate-input" data-validate="Enter password">
+          <label>Ocupación</label>
+            <input class="input100"  type="text" name="ocupacion"  placeholder="Ej. Trabajador">
+            <span  data-placeholder="&#xf191;"></span>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" type="submit" name="Submit" value="Enviar Datos">
+              Enviar
+            </button>
+            <button  class="login100-form-btn" type="reset" name="Submit2" value="Borrar Datos">Limpiar</button>
+          </div>
+
+          <div class="text-center p-t-90">
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="dropDownSelect1"></div>
+  
+<!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+    </body>
+</html>
